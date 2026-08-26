@@ -1,3 +1,12 @@
+# Core deep-learning stack (install the CUDA build of torch that matches your GPU/driver:
+# see https://pytorch.org/get-started/locally/ for the right index URL)
 torch>=2.0
 torchvision>=0.15
-numpy
+
+# FLOP / parameter accounting used by test.py (FlopCountAnalysis, parameter_count_table)
+fvcore>=0.1.5
+
+# Build tools for the optional fused CUDA kernel in moce_fixed/ (a CUDA toolkit / nvcc
+# must also be available on the system; ninja greatly speeds up the build)
+setuptools>=61.0
+ninja
