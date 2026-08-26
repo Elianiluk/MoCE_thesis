@@ -2,7 +2,7 @@
 # see https://pytorch.org/get-started/locally/ for the right index URL)
 torch>=2.0
 torchvision>=0.15
-
+numpy>=1.24,<2.0
 # FLOP / parameter accounting used by test.py (FlopCountAnalysis, parameter_count_table)
 fvcore>=0.1.5
 
