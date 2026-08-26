@@ -3,7 +3,6 @@
 **Static Sparse Supports with Input-Adaptive Mixing for Pointwise Projections**
 
 [![Paper](https://img.shields.io/badge/paper-arXiv%3A2608.23794-b31b1b.svg)](https://arxiv.org/abs/2608.23794)
-[![Venue](https://img.shields.io/badge/venue-AAAI-1f6feb.svg)](https://aaai.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
