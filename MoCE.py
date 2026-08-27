@@ -8,7 +8,6 @@ import moce_fixed.moce_cuda
 
 
 
-# moce without the smart residual expert (no residual temperature, no residual softmax), the best
 class MoCE(nn.Module):
     """
     MoCE without residual temperature.
