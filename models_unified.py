@@ -77,8 +77,7 @@ class Bottleneck(nn.Module):
     def __init__(self, in_channels, mid_channels, stride=1):
         super(Bottleneck, self).__init__()
         
-        # self.conv1 = nn.Conv2d(in_channels, mid_channels, 1, bias=False)
-        self.conv1 = Conv1x1(in_channels, mid_channels, bias=False)
+        self.conv1 = nn.Conv2d(in_channels, mid_channels, 1, bias=False)
         self.bn1 = nn.BatchNorm2d(mid_channels)
         self.relu1 = nn.ReLU(inplace=True)
         
@@ -86,8 +85,7 @@ class Bottleneck(nn.Module):
         self.bn2 = nn.BatchNorm2d(mid_channels)
         self.relu2 = nn.ReLU(inplace=True)
         
-        # self.conv3 = nn.Conv2d(mid_channels, mid_channels * self.expansion, 1, bias=False)
-        self.conv3 = Conv1x1(mid_channels, mid_channels * self.expansion, bias=False)
+        self.conv3 = nn.Conv2d(mid_channels, mid_channels * self.expansion, 1, bias=False)
         self.bn3 = nn.BatchNorm2d(mid_channels * self.expansion)
         
         self.shortcut = nn.Sequential()
